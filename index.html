@@ -3,132 +3,132 @@
 
 <html>
 
-	<head>
+<head>
 
-		<title>Danyllo Verri - Front End Reactjs/Vuejs</title>
-		<meta charset="utf-8">
+	<title>Danyllo Verri - Front End Reactjs/Vuejs</title>
+	<meta charset="utf-8">
 
-		<style type="text/css">
+	<style type="text/css">
+		.linkMenu {
+			text-decoration: none;
+		}
 
-			.linkMenu{
-				text-decoration: none;
-			}
+		/*Define a cor do fundo da interface*/
+		body {
+			background: linear-gradient(30deg, hsl(180, 50%, 10%), hsl(180, 80%, 30%));
+			margin: 0;
+			padding: 0;
+		}
 
-			/*Define a cor do fundo da interface*/
-			body{
-				background: #555555;
-				margin: 0;
-				padding: 0; 
-			}
-			/*Id para configurar o fundo do conteudo principal*/
-			#conteudo_principal{
-				background: #8a8a8a;
-				padding: 10px;
-				width: 600px;
-				height: 2500px;
-				margin: 30px auto;
-				margin-top: 120px; 
+		/*Id para configurar o fundo do conteudo principal*/
+		#conteudo_principal {
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.575), 0 6px 6px rgba(0, 0, 0, 0.397);
+			background: #fff;
+			padding: 10px;
+			width: 600px;
+			height: 2500px;
+			margin: 30px auto;
+			margin-top: 120px;
+		}
 
-				/*position: relative;*/
-			}
+		.caixa {
+			background: linear-gradient(90deg, hsl(0, 0%, 55%), hsl(0, 0%, 40%));
+			width: 100px;
+			height: 100px;
+			color: rgb(0, 0, 0);
+		}
 
-			.caixa{
-				background: #2b2b2b;
-				width: 100px;
-				height: 100px;
-				color: #ffffff;				
-			}
+		#relative {
+			position: relative;
+			left: -30px;
+			top: 0;
+			width: 660px;
+		}
 
-			#relative{
-				position: relative;
-				left: -30px;
-				top: 0;
-				width: 660px;
-			}
+		#boxOrcamento {
+			position: fixed;
+			bottom: 0;
+			right: 10px;
 
-			#boxOrcamento{
-				position: fixed;
-				bottom: 0;
-				right: 10px;
+		}
 
-			}
+		#topMenu {
+			position: none;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: auto;
+			background: #000;
+		}
 
-			#topMenu{
-				position: none;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: auto;
-				background: #000;	
-			}
+		#topMenu ul li {
+			display: inline;
+		}
 
-			#topMenu ul li{
-				display: inline;
-			}
+		#topMenu ul li a:link,
+		:visited {
+			color: hsl(180, 50%, 50%);
+		}
 
-			#topMenu ul li a:link, :visited{
-				color: yellow;
-			}
+		#topMenu ul li a:hover {
+			color: #000000;
+			background: rgb(255, 255, 0);
+		}
 
-			#topMenu ul li a:hover{
-				color: #000000;
-				background: rgb(255, 255, 0);
-			}
+		#topMenu ul li a:active {
+			color: #8a8a8a
+		}
 
-			#topMenu ul li a:active{
-				color: #8a8a8a
-			}
+		.topMenufont {
+			position: relative;
+			padding: 15px;
+			margin: 40px;
+			font-size: 60px;
+			border: 1px solid red none;
+			clear: both;
+			white-space: nowrap;
+		}
 
-			.inline{
-				display: inline !important;
-			}
+		#siteHead {
 
-            .topMenufont{
-                position: relative;
-                padding: 15px;
-                margin: 40px;
-                /*font-family:  "Spicy Rice", cursive;*/
-                font-size: 60px;
-                border: 1px solid red none;
-                clear: both;
-				white-space: nowrap;
-            }
-            #siteHead{
-                
-                padding: 25px 40px 25px 40px ;
-            }
-		</style>
+			padding: 25px 40px 25px 40px;
+		}
 
-	</head>
+		footer {
+			text-align: center;
+			font-weight: bolder;
+			margin: 20px;
+		}
+	</style>
 
-	<body>
-		
-		<div id="topMenu" class="caixa">
-					<nav>
-						<ul>
-							<li><a href="#" class="inline linkMenu topMenufont">Home </a></li>
-							<li><a href="#" class="inline linkMenu topMenufont">O Desenvolvedor </a></li>
-							<li><a href="#" class="inline linkMenu topMenufont">Portifólio </a></li>
-							<li><a href="#" class="inline linkMenu topMenufont">Contato</a></li>
-						</ul>
-					</nav>
-				</div>
-		
-				<div id="conteudo_principal">
-			
-			
+</head>
 
-			<div id="relative" class="caixa">
-              <h1 id="siteHead">Danyllo Verri - Front End Reactjs/Vuejs</h1>
-            </div>
-            <h1>O Desenvolvedor</h1>
-			<div id="boxOrcamento" class="caixa">
-                Faça um Orçamento agora clicando <a href="#">aqui!</a>
-            </div>
+<body>
+	<div id="topMenu" class="caixa">
+		<nav>
+			<ul>
+				<li><a href="#" class="inline linkMenu topMenufont">Home </a></li>
+				<li><a href="#" class="inline linkMenu topMenufont">O Desenvolvedor </a></li>
+				<li><a href="#" class="inline linkMenu topMenufont">Portifólio </a></li>
+				<li><a href="#" class="inline linkMenu topMenufont">Contato</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div id="conteudo_principal">
 
-			
+
+
+		<div id="relative" class="caixa">
+			<h1 id="siteHead">Danyllo Verri - Front End Reactjs/Vuejs</h1>
 		</div>
-        <div>Todos os direitos reservados Danyllo Verri</div>
-	</body>
+		<h1>O Desenvolvedor</h1>
+		<div id="boxOrcamento">
+			Faça um Orçamento agora clicando <a href="#">aqui!</a>
+		</div>
+
+
+	</div>
+	<footer>Todos os direitos reservados Danyllo Verri</footer>
+</body>
 
 </html>
