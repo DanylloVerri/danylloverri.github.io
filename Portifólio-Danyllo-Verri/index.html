@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+
+<html>
+
+	<head>
+
+		<title>Danyllo Verri - Front End Reactjs/Vuejs</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+
+			.linkMenu{
+				text-decoration: none;
+				padding: 40px 0px 25px 0px;
+                margin: 10px;
+			}
+
+			/*Links não visitados*/
+			a:link{
+				color:yellow;
+			}
+
+			/*Links Visitados*/
+
+			a:visited{
+				color:yellow;
+			}
+
+			/*Links Hover, passa o cursor sobre o link*/
+
+			a:hover {
+                color: #000000;
+				background: rgb(255, 255, 0);
+                
+			}
+
+			/*Links Ativos, quando clicado*/
+
+			a:active {
+				color: #ff0000;
+			}
+
+			body{
+				background: #555555; 
+			}
+
+			#conteudo_principal{
+				background: #8a8a8a;
+				padding: 10px;
+				width: 600px;
+				height: 2500px;
+				margin: 30px auto;
+				margin-top: 120px; 
+
+				/*position: relative;*/
+			}
+
+			.caixa{
+				background: #2b2b2b;
+				width: 100px;
+				height: 100px;
+				color: #ffffff;				
+			}
+
+			#relative{
+				position: relative;
+				left: -30px;
+				top: 0;
+				width: 660px;
+			}
+
+			#absoluta{
+				position: fixed;
+				bottom: 0;
+				right: 10px;
+
+			}
+
+			#topMenu{
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				background: #000;
+
+			}
+            
+            .topMenufont{
+                position: relative;
+                padding: 15px;
+                margin: 40px;
+                /*font-family:  "Spicy Rice", cursive;*/
+                font-size: 60px;
+                border: 1px solid red none;
+                clear: both;
+            }
+            #siteHead{
+                
+                padding: 25px 40px 25px 40px ;
+            }
+		</style>
+
+	</head>
+
+	<body>
+
+		<div id="conteudo_principal">
+			
+			
+
+			<div id="relative" class="caixa">
+              <h1 id="siteHead">Danyllo Verri - Front End Reactjs/Vuejs</h1>
+            </div>
+            <h1>O Desenvolvedor</h1>
+			<div id="absoluta" class="caixa">
+                Faça um Orçamento agora clicando <a href="#">aqui!</a>
+            </div>
+
+			<div id="topMenu" class="caixa">
+                <a href="#" class="linkMenu"><span class="topMenufont">Home </span></a>
+                <a href="#" class="linkMenu"><span class="topMenufont">O Desenvolvedor </span></a>
+                <a href="#" class="linkMenu"><span class="topMenufont">Portifólio </span></a>
+                <a href="#" class="linkMenu"><span class="topMenufont">Contato</span></a>
+            </div>
+
+		</div>
+        <div>Todos os direitos reservados Danyllo Verri</div>
+	</body>
+
+</html>
