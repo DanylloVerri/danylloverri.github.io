@@ -15,7 +15,7 @@
 
 		/*Define a cor do fundo da interface*/
 		body {
-			background: linear-gradient(30deg, hsl(180, 50%, 10%), hsl(180, 80%, 30%));
+			background: url(https://i.imgur.com/MJAkxbh.png);
 			margin: 0;
 			padding: 0;
 		}
@@ -31,12 +31,16 @@
 			margin-top: 120px;
 		}
 
-		.caixa {
+		.header {
+			border-radius: 6%;
 			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.575), 0 6px 6px rgba(0, 0, 0, 0.397);
 			background: linear-gradient(90deg, hsl(0, 0%, 55%), hsl(0, 0%, 40%));
 			width: 100px;
 			height: 100px;
 			color: rgb(0, 0, 0);
+			animation-name: header;
+			animation-duration: 1s;
+			
 		}
 
 		#relative {
@@ -60,6 +64,7 @@
 			width: 100%;
 			height: auto;
 			background: #000;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.575), 0 6px 6px rgba(0, 0, 0, 0.397);
 		}
 
 		#topMenu ul li {
@@ -101,12 +106,21 @@
 			font-weight: bolder;
 			margin: 20px;
 		}
+		@keyframes header{
+			0%{
+				top: 900px;
+			}
+
+			100%{
+				top: 0px;
+			}
+		}
 	</style>
 
 </head>
 
 <body>
-	<div id="topMenu" class="caixa">
+	<div id="topMenu">
 		<nav>
 			<ul>
 				<li><a href="#" class="inline linkMenu topMenufont">Home </a></li>
@@ -120,7 +134,7 @@
 
 
 
-		<div id="relative" class="caixa">
+		<div id="relative" class="header">
 			<h1 id="siteHead">Danyllo Verri - Front End Reactjs/Vuejs</h1>
 		</div>
 		<h1>O Desenvolvedor</h1>
